@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+    .bs-example{
+        margin: 0px;
+    }
+.navbar-brand{
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.search-box {
+  position: relative;
+}
+.search-box input.form-control {
+  padding-right: 35px;
+  border-radius: 0;
+  padding-left: 0;
+  border-width: 0 0 1px 0;
+  box-shadow: none;
+}
+.search-box input.form-control:focus {
+  border-color: #f08373;
+}
+.search-box .input-group-text {
+  min-width: 35px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  padding: 7px 0 7px 7px;
+  height: 100%;
+}
+.search-box i {
+  color: #a0a5b1;
+  font-size: 19px;
+}
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a href="/" class="navbar-brand">CROP VALLEY</a>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="/" class="nav-item nav-link active">Home</a>
+                <a href="/soiltesting" class="nav-item nav-link">Soil Testing</a>
+                <a href="/studentclick" class="nav-item nav-link"></a>
+
+            </div>
+
+            <div class="navbar-nav">
+                <a href="/aboutus" class="nav-item nav-link">Cultivation</a>
+                <a href="contactus" class="nav-item nav-link">Contact Us</a>
+                <div class="navbar-nav ml-auto">
+      <div class="navbar-form-wrapper">
+        <form class="navbar-form form-inline">
+          <div class="input-group search-box">
+            <input type="text" id="search" class="form-control" placeholder="Search Here...">
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="material-icons">&#xE8B6;</i>
+              </span>
+            </div>
+          </div>
+        </form>
+        </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+</body>
+</html>

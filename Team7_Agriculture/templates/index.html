@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>CROP VALLEY</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+/*-------carousel--------*/
+    .bs-example{
+        margin: 0px;
+
+    }
+.navbar-brand{
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+.col-lg-6{
+  padding-left: 20%;
+}
+.jumbotron{
+  margin-bottom: 0px;
+}
+/*-----------------navbar---------*/
+.bs-example1{
+        margin: 0px;
+    }
+.navbar-brand{
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.search-box {
+  position: relative;
+}
+.search-box input.form-control {
+  padding-right: 35px;
+  border-radius: 0;
+  padding-left: 0;
+  border-width: 0 0 1px 0;
+  box-shadow: none;
+}
+.search-box input.form-control:focus {
+  border-color: #f08373;
+}
+.search-box .input-group-text {
+  min-width: 35px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  padding: 7px 17px 7px 7px;
+  height: 100%;
+}
+.search-box i {
+  color: #a0a5b1;
+  font-size: 19px;
+}
+/*-----------------content--------------*/
+body {
+	background: #ebebeb;
+	font-family: "Open Sans", sans-serif;
+}
+.carousel {
+	margin: 30px auto 60px;
+}
+.carousel .carousel-item {
+	text-align: center;
+	overflow: hidden;
+}
+.carousel .carousel-item h4 {
+	font-family: 'Varela Round', sans-serif;
+}
+.carousel .carousel-item img {
+	max-width: 100%;
+	display: inline-block;
+}
+.carousel .carousel-item .btn {
+	border-radius: 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	background: light-blue;
+	padding: -10px -5px;
+	margin-top: 5px;
+}
+.carousel .carousel-item .btn:hover {
+	background: #8c5bff;
+}
+.carousel .carousel-item .btn i {
+	font-size: 10px;
+	font-weight: bold;
+	margin-left: -10px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+.carousel .thumb-wrapper {
+	margin: 5px;
+	text-align: left;
+	background: #fff;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+}
+.carousel .thumb-content {
+	padding: 10px 10px;
+	font-size: 13px;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 44px;
+	width: 44px;
+	background: none;
+	margin: auto 0;
+	border-radius: 50%;
+	border: 3px solid rgba(0, 0, 0, 0.8);
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 36px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -19px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -12px;
+	margin-top: -40px;
+}
+.carousel-control-next i {
+	margin-right: -50px;
+	margin-top: -40px;
+}
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 4px;
+	border: none;
+}
+.carousel-indicators li {
+	background: #ababab;
+}
+.carousel-indicators li.active {
+	background: #555;
+}
+/*-----------footer---------*/
+footer {
+    padding: 0px 0px 0px 0px;
+    background-color:black;
+    margin:0px;
+}
+.fa {
+  padding: 20px;
+  font-size: 23px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+margin-top: 30px;
+}
+.fa-whatsapp {
+  background: #25d366;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+p{text-align:center;
+
+}
+
+</style>
+</head>
+<body>
+<!-----------navbar----------->
+<div class="bs-example">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a href="/" class="navbar-brand">SOIL PRISM</a>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="/" class="nav-item nav-link active">Home</a>
+                <a href="/soiltesting" class="nav-item nav-link">Soil Testing</a>
+                <a href="/crop" class="nav-item nav-link">Crop</a>
+
+            </div>
+
+            <div class="navbar-nav">
+                <a href="aboutus" class="nav-item nav-link">Cultivation Methods</a>
+                <div class="navbar-nav ml-auto">
+      <div class="navbar-form-wrapper">
+        <form class="navbar-form form-inline">
+          <div class="input-group search-box">
+            <input type="text" id="search" class="form-control" placeholder="Search Here...">
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="material-icons">&#xE8B6;</i>
+              </span>
+            </div>
+          </div>
+        </form>
+        </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!---------------carousel------------->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 " height="550px" src="static/images/crop10.jpg"  alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 " height="550px" src="static/images/crop13.jpg"  alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 " height="550px" src="static/images/crop3.jpg"  alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 " height="550px" src="static/images/crop4.jpg"  alt="fourth slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!----------------------content------------------->
+<div class="container-xl">
+	<div class="row">
+		<div class="col-md-10 mx-auto">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="145px" src="static/images/arhar.jpg" alt="first slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Arhar</h4>
+									<p>Arhar crop grown successfully in summer, rainy and winter season, April-Summer, June-Kharif or rainy, September-Rabi or winter season.</p>
+									<a href="arhar" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/tea.jpg"  alt="thirteen slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Tea</h4>
+									<p>Tea grows best in regions which enjoy a warm, humid climate with a rainfall measuring at least 100 centimetres a year. Ideally, it likes deep, light, acidic and well-drained soil.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/coffee.jpg"  alt="thirteen slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Coffee</h4>
+									<p>Optimal coffee-growing conditions include cool to warm tropical climates, rich soils, and few pests or diseases..</p>
+									<a href="coffee" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/turmeric.jpg"  alt="thirteen slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Turmeric</h4>
+									<p>Turmeric thrives in warm, humid conditions and well-drained, neutral soil.</p>
+									<a href="turmeric" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+      								<img class="d-block w-100 " src="static/images/cotton.jpg" alt="second slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Cotton</h4>
+									<p>Cotton grows best in soil with a pH between 5.8 to 8.0. Yield decreases are usually not severe until the soil pH drops below 5.5 to 5.2 on sandy loam and silt loam soils respectively</p>
+									<a href="cotton" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/grams.jpg"  alt="third slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Grams</h4>
+									<p>Best climatic condition for Green gram cultivation is warm humid and within a temperature range of 25°C – 35°C, with moderate rains of 85 to 100 cm, well distributed throughout its growing period of 100 days.</p>
+									<a href="gram" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/ground nut.jpg" alt="fourth slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Ground Nut</h4>
+									<p>Peanuts grow best in loose, well-drained soil rich in organic matter. A sandy-loamy soil is best. Double-dig clay soil and add gypsum and aged compost.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/onion.jpg"  alt="thirteen slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Onion</h4>
+									<p>Grow Onion in a sunny spot that has fertile, well-drained soil with a pH of 6.0 to 6.8. Improve your native soil by mixing in several inches of aged compost or other rich organic matter. Onions aren't great at taking up water, so it's important to keep soil moist so their shallow roots can drink up.</p>
+									<a href="onion" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/potato.jpg" alt="thirteen slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Potato</h4>
+									<p>Potatoes grow best in cool, well-drained, loose soil that is about 45° to 55°F (7° to 13°C). Choose a location that gets full sun—at least 6 hours of sunlight each day. Grow potatoes in rows spaced about 3 feet apart.</p>
+									<a href="potato" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/rubber.jpg"  alt="thirteen slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Rubber</h4>
+									<p>Rubber plants generally prefer temperatures between 60°F to 75°F. In the winter, they can survive in temperatures as low as 50°F. Just like with water and sun needs, a good balance of temperature is ideal for this plant's growth.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/maize.jpg"  alt="fifth slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Maize</h4>
+									<p>the best suitable soil for maize is deep, rich soils of the sub-tropics, where there is abundant nitrogen.</p>
+									<a href="maize" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/moong.jpg"  alt="sixth slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Moong</h4>
+									<p>Moong Dal can be cultivated on a wide range of soil. It gives the best results when grown on well-drained loamy, sandy-loam soils. Waterlogged and saline soils are not suitable for cultivation.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/paddy.jpg"  alt="seventh slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Paddy</h4>
+									<p>Soils with good water retention capacity with high amount of clay and organic matter are ideal for rice cultivation. Clay or clay loams are most suited for rice cultivation.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/rapeseeds and mustard.jpg"  alt="eight slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Rapeseed and Mustard</h4>
+									<p>Rape seed and mustard are capable of growing under a wide range of soil conditions varying from sandy loam to clay loam soils but they thrive best on light loam soils. They neither tolerate water logging conditions nor do well on heavy soils.</p>
+									<a href="mustard-rapeseed" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/sugarcane.jpg"  alt="ninth slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Sugarcane</h4>
+									<p>Sugarcane is a perennial grass grown mainly for its juice, which is used to make sugar. The crop is grown mainly in subtropical and tropical regions, loves humid weather, and grows very fast here in north Florida</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/wheat.jpg"  alt="tenth slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Wheat</h4>
+									<p>Wheat grows in many types of soil, but it grows best in well-drained loam or clay-loam soils. Two major threats to the wheat plant's growth are poor soil drainage and high levels of soil acidity.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/rice.jpg"  alt="elventh slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Rice</h4>
+									<p>Rice grows on a variety of soils like silts, loams and gravels. It can also tolerate alkaline as well as acid soils. However, clayey loam is well suited to the raising of this crop.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="d-block w-100 " height="150px" src="static/images/barley.jpg"  alt="twelve slide">
+								</div>
+								<div class="thumb-content">
+									<h4>Barley</h4>
+									<p>It grows best in well-drained, fertile loams or light, clay soils in areas having cool, dry, mild winters. It also does well on light, droughty soils and tolerates somewhat alkaline soils better than other cereal crops.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+<!--------------footer----------->
+<footer>
+<hr color="black">
+  <p>
+  <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+  <a href="https://www.whatsapp.com/" class="fa fa-whatsapp"></a>
+  <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+  <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+  </p>
+
+<br>
+  <div class="container">
+    <div class="row">
+               <div class="col-md-12 col-sm-12">
+                    <div style="color:white;"class="wow fadeInUp footer-copyright">
+                         <p>Made in India <br>
+                         Copyright &copy;   2021 Soil Prism </p>
+                    </div>
+               </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
